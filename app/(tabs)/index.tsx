@@ -5,8 +5,6 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { StatusBar } from 'expo-status-bar';
 
-
-
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
@@ -16,17 +14,19 @@ export default function HomeScreen() {
           source={require('@/assets/images/partial-react-logo.png')}
           style={styles.reactLogo}
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+      }
+    >
+      <ThemedView style={styles.titleContainer} className="flex-wrap">
+        <ThemedText type="title">Welcome!Welcome!Welssscome!232</ThemedText>
+        <HelloWave />
+        <ThemedText type="title">Welcome!Welcome!Welcome!</ThemedText>
         <HelloWave />
       </ThemedView>
+
       <View>
-            <Text className='text-[40px] text-red-300'>
-        123
-        </Text>
+        <Text className="text-[40px] text-red-300">123</Text>
       </View>
-    
+
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 2: Explore</ThemedText>
         <ThemedText>
